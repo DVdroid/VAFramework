@@ -10,9 +10,12 @@ import Foundation
 
 public final class DiceClass {
 
-    public let version = "1.0"
-    public init() {}
-    public class func throwADice() {
+    public let version: Double
+    public init(with versionNumber: Double) {
+        self.version = versionNumber
+    }
+
+    public func rollADice() {
         let number = Int.random(in: 1...6)
         print("Throwing dice...")
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
