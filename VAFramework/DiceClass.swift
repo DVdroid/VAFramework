@@ -10,6 +10,7 @@ import Foundation
 
 final class DiceClass {
 
+    let version = "1.0"
     class func throwADice() {
         let number = Int.random(in: 1...6)
         print("Throwing dice...")
