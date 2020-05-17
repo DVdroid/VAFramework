@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D66010172471241500D94DC4 /* VAFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D66010152471241500D94DC4 /* VAFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D660101E2471242F00D94DC4 /* DiceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D660101D2471242F00D94DC4 /* DiceClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D66010122471241500D94DC4 /* VAFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VAFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66010152471241500D94DC4 /* VAFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VAFramework.h; sourceTree = "<group>"; };
 		D66010162471241500D94DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D660101D2471242F00D94DC4 /* DiceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				D66010152471241500D94DC4 /* VAFramework.h */,
 				D66010162471241500D94DC4 /* Info.plist */,
+				D660101D2471242F00D94DC4 /* DiceClass.swift */,
 			);
 			path = VAFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D66010112471241500D94DC4 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D660101E2471242F00D94DC4 /* DiceClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		D660101B2471241500D94DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B6LN4XWA2V;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.va.VAFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		D660101C2471241500D94DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B6LN4XWA2V;
