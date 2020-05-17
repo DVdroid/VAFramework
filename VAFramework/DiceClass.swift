@@ -11,7 +11,7 @@ import Foundation
 public final class DiceClass {
 
     let version = "1.0"
-    class func throwADice() {
+    public class func throwADice() {
         let number = Int.random(in: 1...6)
         print("Throwing dice...")
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
