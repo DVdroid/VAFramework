@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class DiceClass {
+public final class DiceClass {
 
     let version = "1.0"
     class func throwADice() {
